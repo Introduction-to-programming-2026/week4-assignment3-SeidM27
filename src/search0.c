@@ -17,3 +17,21 @@ Rules:
 - You must use a loop.
 - Do NOT use any built-in search function.
 */
+include <cs50.h>
+#include <stdio.h>
+int main(void)
+{
+int numbers[] = {10, 20, 30, 40, 50};
+int size = 5;
+int number = get_int("Number: ");
+for (int i = 0; i < size; i++)
+{
+if (numbers[i] == number)
+{
+printf("Found\n");
+return 0;
+}
+}
+printf("Not found\n");
+return 1;
+}
