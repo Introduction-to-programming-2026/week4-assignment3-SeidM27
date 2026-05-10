@@ -18,3 +18,23 @@ Rules:
 - You cannot use a loop to print rows.
 - Base case must be correct.
 */
+#include <cs50.h>
+#include <stdio.h>
+void print_row(int row);
+void print_pyramid(int n);
+int main(void)
+{
+int n;
+do
+{
+n = get_int("Input: ");
+}
+while (n < 1);
+print_pyramid(n);
+}
+void print_pyramid(int n)
+{
+if (n == 0)
+{
+return;
+}
