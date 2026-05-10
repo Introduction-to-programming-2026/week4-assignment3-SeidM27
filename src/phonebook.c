@@ -20,3 +20,27 @@ Rules:
 - You must use struct.
 - Use strcmp() to compare names.
 */
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+typedef struct
+{
+string name;
+string phone;
+}
+Person;
+int main(void)
+{
+Person people[10] =
+{
+{"Seid", "070111222"},
+{"Ali", "071222333"},
+{"Sara", "072333444"},
+{"Arta", "075444555"},
+{"Blerim", "076555666"}
+};
+int count = 5;
+char add = get_char("Add new contact? (y/n): ");
+if (add == 'y' || add == 'Y')
+{
+if (count < 10)
