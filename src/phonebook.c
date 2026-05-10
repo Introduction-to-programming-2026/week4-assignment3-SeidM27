@@ -14,7 +14,7 @@ Task:
 5. If not found, print "Not found".
 
 Bonus (optional):
-Allow the user to add a new contact.
+Allow the user to add a new contact. 
 
 Rules:
 - You must use struct.
